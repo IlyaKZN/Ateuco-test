@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ateuco test</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <ul class="nav_list">
+        <li class="nav_item">
+          <button id="button-1" class="nav_btn nav_btn__active">Страница 1</button>
+        </li>
+        <li class="nav_item">
+          <button id="button-2" class="nav_btn" href="#">Страница 2</button>
+        </li>
+        <li class="nav_item">
+          <button id="button-3" class="nav_btn" href="#">Страница 3</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="content-container">
+      <!-- Здесь будет вставлен контент страницы -->
+    </section>
+  </main>
+
+  <template id="page-content-1">
+    <button class="widgets-reset-button">Сбросить</button>
+    <div class="widgets-container">
+      <!-- Здесь будут вставлены виджеты -->
+    </div>
+  </template>
+
+  <template id="widget-template">
+    <div class="widget">
+      <button class="widget_close-button"></button>
+      <p class="widget_text"></p>
+    </div>
+  </template>
+
+  <template id="page-content-2">
+    <h1>Страница 2</h1>
+  </template>
+
+  <template id="page-content-3">
+    <h1>Страница 3</h1>
+  </template>
+
+  <script src="./index.js" type="module"></script>
+</body>
+</html>

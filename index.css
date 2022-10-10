@@ -1,0 +1,120 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.header {
+  padding: 10px 20px;
+  background-color: rgb(214, 214, 214);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+
+.nav_btn {
+  font-size: 24px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav_btn__active {
+  font-weight: 700;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+}
+
+.widgets-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.widget {
+  height: 400px;
+  width: 400px;
+  background-color: rgb(250, 209, 132);
+  box-sizing: border-box;
+  border: 2px solid brown;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.widget_text {
+  font-size: 50px;
+}
+
+.widget_close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.2;
+}
+
+.widget_close-button:hover {
+  opacity: 1;
+}
+
+.widget_close-button::before,
+.widget_close-button::after {
+	content: '';
+	position: absolute;
+	top: 10px;
+	display: block;
+	width: 40px;
+	height: 3px;
+	background: #000;
+}
+
+.widget_close-button::before {
+	transform: rotate(45deg);
+}
+
+.widget_close-button::after {
+	transform: rotate(-45deg);
+}
+
+.widgets-reset-button {
+  background-color: rgb(141, 223, 90);
+  border: none;
+  margin-bottom: 20px;
+  font-size: 20px;
+  width: min-content;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+
+.widgets-reset-button:hover {
+  opacity: 0.8;
+}
